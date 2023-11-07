@@ -1,10 +1,7 @@
 #include "Zombie.hpp"
-#include <iostream>
-#include <string.h>
 
-Zombie::Zombie(std::string name)
+Zombie::Zombie(std::string name):_name(name)
 {
-	this->_name = name;
 }
 
 Zombie::~Zombie()

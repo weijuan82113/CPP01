@@ -14,7 +14,6 @@ int main()
 		HumanA bob("Bob", club);
 		bob.attack();
 		club.setType("some other type of club");
-		//std::cout << "test2:" << club.getType() << std::endl;
 		bob.attack();
 	}
 	{
@@ -23,7 +22,6 @@ int main()
 		jim.setWeapon(club);
 		jim.attack();
 		club.setType("some other type of club");
-		//std::cout << "test1:" << club.getType() << std::endl;
 		jim.attack();
 	}
 	return 0;

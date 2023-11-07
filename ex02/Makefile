@@ -6,22 +6,22 @@
 #    By: wchen <wchen@student.42tokyo.jp>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/26 20:22:33 by wchen             #+#    #+#              #
-#    Updated: 2023/08/30 21:02:48 by wchen            ###   ########.fr        #
+#    Updated: 2023/11/04 17:22:58 by wchen            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = Zombie
 
 # COMPILE FLAGS
-CC		= c++
-CFLAG	= -Wall -Wextra -Werror -std=c++98
+CXX		= c++
+CXXFLAG	= -Wall -Wextra -Werror -std=c++98
 SRCS	= main.cpp
 OBJS	= $(SRCS:%.cpp=%.o)
 
 all		: $(NAME)
 
 $(NAME) : $(OBJS)
-	$(CC) $(CFLAG) $(OBJS) -o $@
+	$(CXX) $(CXXFLAG) $(OBJS) -o $@
 
 clean 	:
 	rm -rf $(OBJS)
