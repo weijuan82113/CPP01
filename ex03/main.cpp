@@ -3,9 +3,9 @@
 #include "HumanB.hpp"
 #include <stdlib.h>
 
-__attribute__((destructor)) static void destructor(void) {
-    system("leaks -q Human");
-}
+// __attribute__((destructor)) static void destructor(void) {
+//     system("leaks -q Human");
+// }
 
 int main()
 {

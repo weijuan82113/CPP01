@@ -10,7 +10,7 @@ int main (int argc, char **argv)
 	if (argc != 4)
 	{
 		std::cout << "The variable num is fault" << std::endl;
-		std::cout << "You have to input the three variables : <filename> <source string> <destination string>" << std::endl;
+		std::cout << "You have to input the three variables : <filename> <target string> <replace string>" << std::endl;
 		return (1);
 	}
 	std::string target = std::string(argv[2]);
