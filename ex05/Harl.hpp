@@ -11,7 +11,7 @@ class Harl
 		Harl();
 		~Harl();
 	private :
-		typedef void (Harl::*Arrayfun[4])();
+		typedef void(Harl::*funcPtrArray[4])();
 		void info(void);
 		void warning(void);
 		void error(void);

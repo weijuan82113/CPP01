@@ -31,12 +31,12 @@ void Harl::error(void)
 
 void Harl::complain(std::string level)
 {
-	Arrayfun f = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
-	std::string Arraylevel[4] = {"debug","info","warning","error"};
+	funcPtrArray f = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+	std::string arrayLevel[4] = {"debug","info","warning","error"};
 	int level_int;
 	for (int i = 0; i < 4; i++)
 	{
-		if (Arraylevel[i] == level)
+		if (arrayLevel[i] == level)
 		{
 			level_int = i;
 			break;
