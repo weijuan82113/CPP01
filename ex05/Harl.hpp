@@ -7,9 +7,9 @@
 class Harl
 {
 	public :
-		void complain(std::string level);
 		Harl();
 		~Harl();
+		void complain(std::string level);
 	private :
 		typedef void(Harl::*funcPtrArray[4])();
 		void info(void);
