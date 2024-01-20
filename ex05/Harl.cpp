@@ -33,7 +33,7 @@ void Harl::complain(std::string level)
 {
 	funcPtrArray f = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
 	std::string arrayLevel[4] = {"debug","info","warning","error"};
-	int level_int;
+	int level_int = -1;
 	for (int i = 0; i < 4; i++)
 	{
 		if (arrayLevel[i] == level)
@@ -56,5 +56,7 @@ void Harl::complain(std::string level)
 		case 3:
 			(this->*f[3])();
 			break;
+		default:
+			std::cout << "the level is wrong" << std::endl;
 	}
 };
