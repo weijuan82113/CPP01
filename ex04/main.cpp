@@ -13,13 +13,13 @@ int main (int argc, char **argv)
 		std::cout << "You have to input the three variables : <filename> <target string> <replace string>" << std::endl;
 		return (1);
 	}
-	std::string target = std::string(argv[2]);
-	std::string replace = std::string(argv[3]);
-	if ((target.length() <= replace.length()) && replace.find(target) != std::string::npos)
-	{
-		std::cout << "Please input different target and replace string" << std::endl;
-		return (1);
-	}
+	// std::string target = std::string(argv[2]);
+	// std::string replace = std::string(argv[3]);
+	// if ((target.length() <= replace.length()) && replace.find(target) != std::string::npos)
+	// {
+	// 	std::cout << "Please input different target and replace string" << std::endl;
+	// 	return (1);
+	// }
 	if (std::string(argv[2]).empty())
 	{
 		std::cout << "You have to make sure that the second varible could not be zero" << std::endl;
